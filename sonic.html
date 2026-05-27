@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sonic — Isabel Zlatev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+    <nav class="project-nav">
+        <a href="index.html" class="project-back">
+            <span class="back-arrow">&larr;</span>
+            <span>Back</span>
+        </a>
+        <span class="project-nav-index">001 / 009</span>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-meta-row">
+            <span class="project-category">Web Audio / Creative Code</span>
+            <span class="project-year">2026</span>
+        </div>
+        <h1 class="project-title">Sonic</h1>
+        <div class="project-detail-row">
+            <div class="project-detail-block">
+                <span class="project-detail-label">Type</span>
+                <span class="project-detail-value">Visual Music Playground</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Stack</span>
+                <span class="project-detail-value">Web Audio, Three.js, GLSL</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Scale</span>
+                <span class="project-detail-value">~15K lines, no build step</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Aesthetic</span>
+                <span class="project-detail-value">Windows 95 UI</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-hero-image">
+        <img src="images/sonic/sonic-1.png" alt="Sonic visual music playground">
+    </div>
+
+    <section class="project-body project-body-stacked">
+        <p class="project-description">
+            Sonic is a browser-based visual music playground that turns keyboard input into synchronized audio and real-time 3D graphics. Built entirely with client-side web technologies&mdash;Web Audio API, Three.js, and a DOM overlay HUD&mdash;the app wraps a deep synth and drum engine in a full Windows 95&ndash;styled interface. No bundlers: dependencies load from CDN across a single-page entry point, a ~10,900-line core module, MIDI player, WebSocket bridge, and theme CSS.
+        </p>
+
+        <h3 class="project-section-title">Audio Engine</h3>
+        <p class="project-description">
+            Polyphonic synthesizer with seven presets, a twelve-type drum machine, per-track mixing, and a six-effect chain. Each voice uses detuned oscillators, optional sub and air partials, dual filters, waveshaper distortion, and ADSR envelopes&mdash;from hypersaw pads and cathedral organ to 8-bit chiptune. A mastering chain (highpass, saturator, compressor, limiter) sits alongside a separate punchy drum bus. Six send effects (EQ, phaser, reverb, delay, chorus, distortion) apply per MIDI track. A 4096-bin FFT analyser drives all visual reactivity each frame.
+        </p>
+
+        <h3 class="project-section-title">3D &amp; Particles</h3>
+        <p class="project-description">
+            Shader-driven visuals with no traditional scene lights. A custom GLSL background composites eleven procedural layers (nebulae, voronoi, moir&eacute;, prism rings, caustics, and more), all audio-reactive. The centerpiece is a GPGPU particle system&mdash;16,384 particles in GPUComputationRenderer textures&mdash;with velocity physics combining curl noise, gravity, orbital jets, and toroidal vortex fields. Each chromatic pitch class maps to a unique physics and SDF morphology recipe.
+        </p>
+
+        <h3 class="project-section-title">Post-Processing &amp; MIDI</h3>
+        <p class="project-description">
+            A single fullscreen pass applies 20+ effects at 75% resolution: chromatic aberration, bloom, CRT scanlines, kaleidoscope, ACES tone mapping, and cinematic grading. MIDI files parse via @tonejs/midi with lookahead scheduling, Krumhansl-Kessler key detection, and a Win95-styled per-track mixer stored in IndexedDB. A 3D piano roll renders upcoming notes on a rotating N-gon prism with instanced meshes and glow halos.
+        </p>
+
+        <h3 class="project-section-title">Remote &amp; Performance</h3>
+        <p class="project-description">
+            Socket.IO enables multi-device control: a desktop host shows a QR room code; mobile clients claim slots for instruments, mixer, effects, drums, or keyboard. Optional webcam head-tracking and gyroscope input drive camera and post FX. Frame budgeting throttles piano roll, constellation canvas, and DOM updates; instanced meshes and signature-cached overlays keep the loop real-time.
+        </p>
+    </section>
+
+    <div class="project-gallery">
+        <div class="project-gallery-grid">
+            <img src="images/sonic/sonic-2.png" alt="Sonic interface and HUD" loading="lazy">
+            <img src="images/sonic/sonic-3.png" alt="Sonic 3D visuals" loading="lazy">
+            <img src="images/sonic/sonic-4.png" alt="Sonic detail" loading="lazy">
+        </div>
+    </div>
+
+    <nav class="project-footer-nav">
+        <a href="arduino-spirit-box.html" class="project-footer-link">
+            <span class="project-footer-label">&larr; Previous</span>
+            <span class="project-footer-title">Arduino Spirit Box</span>
+        </a>
+        <a href="color-dj.html" class="project-footer-link">
+            <span class="project-footer-label">Next &rarr;</span>
+            <span class="project-footer-title">Color DJ</span>
+        </a>
+    </nav>
+
+    <footer class="project-footer-copy">
+        <span>&copy; 2026 Isabel Zlatev</span>
+        <span>Design & Technology</span>
+    </footer>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <script src="script.js"></script>
+</body>
+</html>

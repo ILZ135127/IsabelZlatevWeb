@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand-Tracking Oscillator — Isabel Zlatev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+    <nav class="project-nav">
+        <a href="index.html" class="project-back">
+            <span class="back-arrow">&larr;</span>
+            <span>Back</span>
+        </a>
+        <span class="project-nav-index">007 / 009</span>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-meta-row">
+            <span class="project-category">TouchDesigner / Installation</span>
+            <span class="project-year">2025</span>
+        </div>
+        <h1 class="project-title">Hand-Tracking<br>Oscillator</h1>
+        <div class="project-detail-row">
+            <div class="project-detail-block">
+                <span class="project-detail-label">Type</span>
+                <span class="project-detail-value">Audio-Reactive Installation</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Tools</span>
+                <span class="project-detail-value">TouchDesigner, Mediapipe</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Medium</span>
+                <span class="project-detail-value">Real-time Visual & Sound</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-hero-image">
+        <img src="https://img1.wsimg.com/isteam/ip/94ba3a6a-0851-4e0a-bb10-1e494e8239e9/Screenshot%202026-01-27%20204342.png" alt="Hand-Tracking Oscillator">
+    </div>
+
+    <section class="project-body">
+        <p class="project-description">
+            An audio-reactive installation built in TouchDesigner that turns your hands into the instrument. Using Mediapipe for real-time hand tracking, the patch reads gesture and position to drive a visual and sound oscillator&mdash;so what you see and hear is always tied to how you move in space.
+        </p>
+
+        <h3 class="project-section-title">How It Works</h3>
+        <p class="project-description">
+            A camera feed runs through Mediapipe hand landmarks; those values map to oscillator parameters in TouchDesigner&mdash;frequency, amplitude, color, and motion in the scene. Small movements nudge the tone; bigger gestures spike visuals and sound. The goal was a tight feedback loop: no mouse, no slider bank&mdash;just body as controller.
+        </p>
+
+        <h3 class="project-section-title">Experience</h3>
+        <p class="project-description">
+            Standing in front of the piece, you learn the system by playing with it. The installation rewards exploration and repetition, like tuning an analog synth with your hands. It sits at the intersection of performance, creative code, and sound design&mdash;the same threads I pull through game and installation work.
+        </p>
+    </section>
+
+    <div class="project-gallery">
+        <div class="project-gallery-grid">
+            <img src="https://img1.wsimg.com/isteam/ip/94ba3a6a-0851-4e0a-bb10-1e494e8239e9/Screenshot%202025-12-10%20234531.png" alt="Oscillator process" loading="lazy">
+            <img src="https://img1.wsimg.com/isteam/ip/94ba3a6a-0851-4e0a-bb10-1e494e8239e9/Screenshot%202026-01-27%20211152.png" alt="Oscillator detail" loading="lazy">
+        </div>
+    </div>
+
+    <nav class="project-footer-nav">
+        <a href="circuit-bloom.html" class="project-footer-link">
+            <span class="project-footer-label">&larr; Previous</span>
+            <span class="project-footer-title">Circuit Bloom</span>
+        </a>
+        <a href="survival-smallest.html" class="project-footer-link">
+            <span class="project-footer-label">Next &rarr;</span>
+            <span class="project-footer-title">Survival of the Smallest</span>
+        </a>
+    </nav>
+
+    <footer class="project-footer-copy">
+        <span>&copy; 2026 Isabel Zlatev</span>
+        <span>Design & Technology</span>
+    </footer>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <script src="script.js"></script>
+</body>
+</html>

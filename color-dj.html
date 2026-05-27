@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color DJ — Isabel Zlatev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+    <nav class="project-nav">
+        <a href="index.html" class="project-back">
+            <span class="back-arrow">&larr;</span>
+            <span>Back</span>
+        </a>
+        <span class="project-nav-index">002 / 009</span>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-meta-row">
+            <span class="project-category">Installation / TouchDesigner</span>
+            <span class="project-year">2026</span>
+        </div>
+        <h1 class="project-title">Color<br>DJ</h1>
+        <div class="project-detail-row">
+            <div class="project-detail-block">
+                <span class="project-detail-label">Type</span>
+                <span class="project-detail-value">Immersive Installation</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">My Role</span>
+                <span class="project-detail-value">TouchDesigner Visuals</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Team</span>
+                <span class="project-detail-value">Participation S26</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Context</span>
+                <span class="project-detail-value">Parsons — Dark Room</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-hero-image">
+        <img src="images/color-dj/color-dj-hero.jpg" alt="Color DJ projected visuals">
+    </div>
+
+    <section class="project-body project-body-stacked">
+        <p class="project-description">
+            Color DJ is an interactive installation that turns a room into a living, sensory DJ set. The space is divided into four quadrants&mdash;each mapped to its own sound loop, projected color palette, and ambient scent. As participants move between zones, music layers and mixes, colors bleed and remix across the walls, and scents shift. The crowd becomes the DJ through presence and movement alone.
+        </p>
+
+        <h3 class="project-section-title">What It Does</h3>
+        <p class="project-description">
+            Built for young adults navigating overwhelm and burnout, the piece offers intentional sensory immersion rather than silence: soft sound, shifting color, and scent work together to slow the nervous system. Participants move from passive, anxious states into active but effortless presence&mdash;grounded, decompressed, and in control of the room&rsquo;s atmosphere.
+        </p>
+
+        <h3 class="project-section-title">My Contribution — Visuals</h3>
+        <p class="project-description">
+            I built and programmed the interactive visual system in TouchDesigner (with Evie Shapiro), designing real-time projections that respond to where people stand in the room. Each quadrant carries a distinct visual identity tied to genre research&mdash;afro, alt pop, house, and jazz&mdash;so color, motion, and texture remix as bodies cross boundaries. Sensor data from Arduino and capacitive floor pads feeds into the patch, blending zones when multiple people occupy the space.
+        </p>
+
+        <h3 class="project-section-title">System</h3>
+        <p class="project-description">
+            The full installation combines TouchDesigner visuals, curated sound and scent (Asa Birgisdottir &amp; Mehak Garg), Arduino sensing and physical build (Zhaniya Kenes), and a dark-room presentation for 10&ndash;15 people. Prototyping moved from distance sensors and foil touch pads to quadrant-based human detection, relay-controlled diffusion, and iterative playtesting before the final show.
+        </p>
+    </section>
+
+    <div class="project-video">
+        <video controls playsinline preload="metadata" poster="images/color-dj/color-dj-hero.jpg">
+            <source src="images/color-dj/color-dj-demo.mp4" type="video/mp4">
+            Your browser does not support embedded video.
+        </video>
+        <span class="project-video-caption">Demo documentation — visuals by Isabel Zlatev</span>
+    </div>
+
+    <div class="project-gallery">
+        <div class="project-gallery-grid">
+            <img src="images/color-dj/color-dj-playtest.jpg" alt="Color DJ playtesting with projected visuals" loading="lazy">
+            <img src="images/color-dj/color-dj-touchdesigner.jpg" alt="TouchDesigner visual development" loading="lazy">
+            <img src="images/color-dj/color-dj-visuals.jpg" alt="Color DJ abstract visuals" loading="lazy">
+        </div>
+    </div>
+
+    <nav class="project-footer-nav">
+        <a href="sonic.html" class="project-footer-link">
+            <span class="project-footer-label">&larr; Previous</span>
+            <span class="project-footer-title">Sonic</span>
+        </a>
+        <a href="queering-the-controller.html" class="project-footer-link">
+            <span class="project-footer-label">Next &rarr;</span>
+            <span class="project-footer-title">Queering the Controller</span>
+        </a>
+    </nav>
+
+    <footer class="project-footer-copy">
+        <span>&copy; 2026 Isabel Zlatev</span>
+        <span>Design & Technology</span>
+    </footer>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <script src="script.js"></script>
+</body>
+</html>

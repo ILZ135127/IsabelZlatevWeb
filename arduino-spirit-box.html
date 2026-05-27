@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino Spirit Box — Isabel Zlatev</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="project-page">
+    <nav class="project-nav">
+        <a href="index.html" class="project-back">
+            <span class="back-arrow">&larr;</span>
+            <span>Back</span>
+        </a>
+        <span class="project-nav-index">009 / 009</span>
+    </nav>
+
+    <section class="project-hero">
+        <div class="project-meta-row">
+            <span class="project-category">Hardware / Arduino</span>
+            <span class="project-year">2025</span>
+        </div>
+        <h1 class="project-title">Arduino<br>Spirit Box</h1>
+        <div class="project-detail-row">
+            <div class="project-detail-block">
+                <span class="project-detail-label">Type</span>
+                <span class="project-detail-value">Physical Computing</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Tools</span>
+                <span class="project-detail-value">Arduino Uno, TEA5757</span>
+            </div>
+            <div class="project-detail-block">
+                <span class="project-detail-label">Medium</span>
+                <span class="project-detail-value">Hardware, 3D Modeling</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="project-hero-image">
+        <img src="https://img1.wsimg.com/isteam/ip/94ba3a6a-0851-4e0a-bb10-1e494e8239e9/IMG_8404.jpg" alt="Arduino Spirit Box">
+    </div>
+
+    <section class="project-body">
+        <p class="project-description">
+            A physical-computing take on the classic &ldquo;spirit box&rdquo;&mdash;a device paranormal investigators use to sweep radio frequencies and listen for fragments of sound in static. This build uses an Arduino Uno and a TEA5757 FM module to scan the band automatically, outputting noise and fleeting audio through a speaker so the box feels alive and unpredictable.
+        </p>
+
+        <h3 class="project-section-title">Build</h3>
+        <p class="project-description">
+            The circuit chains the radio module, audio output, and user controls on the Uno. Firmware handles frequency stepping and scanning logic so the listener isn&rsquo;t choosing stations manually&mdash;the box does the hunting. Interaction is tactile: knobs or buttons to start, stop, or shape how aggressively it sweeps.
+        </p>
+
+        <h3 class="project-section-title">Enclosure &amp; Process</h3>
+        <p class="project-description">
+            Before soldering the final hardware, I modeled the enclosure in 3D so components, ports, and speaker placement would fit in one coherent object. That mock-up pass kept the physical build from becoming a breadboard permanently stuck on a desk&mdash;the spirit box was meant to be held, carried, and performed with.
+        </p>
+    </section>
+
+    <div class="project-gallery">
+        <div class="project-gallery-grid">
+            <img src="https://img1.wsimg.com/isteam/ip/94ba3a6a-0851-4e0a-bb10-1e494e8239e9/Screenshot%202026-01-27%20212522.png" alt="Spirit box schematic" loading="lazy">
+            <img src="https://img1.wsimg.com/isteam/ip/94ba3a6a-0851-4e0a-bb10-1e494e8239e9/Screenshot%202026-01-27%20212133.png" alt="Spirit box 3D model" loading="lazy">
+        </div>
+    </div>
+
+    <nav class="project-footer-nav">
+        <a href="survival-smallest.html" class="project-footer-link">
+            <span class="project-footer-label">&larr; Previous</span>
+            <span class="project-footer-title">Survival of the Smallest</span>
+        </a>
+        <a href="sonic.html" class="project-footer-link">
+            <span class="project-footer-label">Next &rarr;</span>
+            <span class="project-footer-title">Sonic</span>
+        </a>
+    </nav>
+
+    <footer class="project-footer-copy">
+        <span>&copy; 2026 Isabel Zlatev</span>
+        <span>Design & Technology</span>
+    </footer>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+    <script src="script.js"></script>
+</body>
+</html>
