@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -24,7 +24,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Remove custom domain file (use github.io URL only)
+      - name: Delete CNAME from repo (stops broken redirects)
+        run: |
+          if [ -f CNAME ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git rm -f CNAME
+            git commit -m "Remove CNAME — site URL is ilz135127.github.io/IsabelZlatevWeb"
+            git push
+          fi
+
+      - name: Prepare site files
         run: rm -f CNAME
 
       - name: Upload site
