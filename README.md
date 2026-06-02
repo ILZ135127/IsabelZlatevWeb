@@ -4,11 +4,27 @@ Static portfolio site (HTML, CSS, JS).
 
 ## Live site
 
-After GitHub Pages is enabled, the site is at:
+- **Custom domain:** https://isabelzlatev.com (after GoDaddy DNS is configured)
+- **GitHub Pages:** https://ilz135127.github.io/IsabelZlatevWeb/
 
-**https://ilz135127.github.io/IsabelZlatevWeb/**
+### GoDaddy DNS for isabelzlatev.com
 
-(Username and repo name must match your GitHub account exactly.)
+In GoDaddy → **DNS** → add these records:
+
+| Type | Name | Value |
+|------|------|--------|
+| A | @ | `185.199.108.153` |
+| A | @ | `185.199.109.153` |
+| A | @ | `185.199.110.153` |
+| A | @ | `185.199.111.153` |
+
+Optional — also serve `www`:
+
+| Type | Name | Value |
+|------|------|--------|
+| CNAME | www | `ilz135127.github.io` |
+
+Then in GitHub: **Settings → Pages → Custom domain** → enter `isabelzlatev.com` → save → enable **Enforce HTTPS** when available.
 
 ## Deploy with GitHub Pages
 
