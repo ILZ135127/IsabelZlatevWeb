@@ -24,6 +24,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Remove custom domain file (use github.io URL only)
+        run: rm -f CNAME
+
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:
